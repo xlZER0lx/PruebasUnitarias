@@ -1,5 +1,7 @@
 import unittest
 
+from Calculadora import Calculadora
+
 class TestCalculadora(unittest.TestCase):
 
     def setUp(self):
@@ -32,13 +34,6 @@ class TestCalculadora(unittest.TestCase):
 
         self.assertEqual(7, resultado)
 
-class Calculadora():
-
-    def sumar(self, num1, num2):
-        return num1 + num2
-
-    def restar(self, num1, num2):
-        return num1 - num2
 
 if __name__ == '__main__':
     unittest.main()
