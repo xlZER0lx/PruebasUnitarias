@@ -21,12 +21,24 @@ class TestCalculadora(unittest.TestCase):
         resultado = self.calc.sumar(5, 5)
 
         self.assertEqual(10, resultado)
-        
+
+    def test_resta_de_5_menos_3(self):
+        resultado = self.calc.restar(5, 3)
+
+        self.assertEqual(2, resultado)
+
+    def test_resta_de_15_menos_8(self):
+        resultado = self.calc.restar(15, 8)
+
+        self.assertEqual(7, resultado)
 
 class Calculadora():
 
     def sumar(self, num1, num2):
         return num1 + num2
+
+    def restar(self, num1, num2):
+        return num1 - num2
 
 if __name__ == '__main__':
     unittest.main()
